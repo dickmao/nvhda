@@ -44,7 +44,7 @@ Since its logic is copied from the bbswitch module, it works like that.
 
 Check dmesg for messages.
 
-### Enable on bootup (on a debian-like system)
+### Enable on bootup (using systemd)
     # cd scripts
     # sudo sh -c "for service in *.service ; do cp \$service /lib/systemd/system ; systemctl enable \$service ; done"
 
